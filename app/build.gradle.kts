@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.autoever.hyundaicarlist"
+    namespace = "com.autoever.carlist"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.autoever.hyundaicarlist"
+        applicationId = "com.autoever.carlist"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -46,7 +46,8 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    // Retrofit & Gson
+    // 통신
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
 }
